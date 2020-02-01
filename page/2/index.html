@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="iolioli">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="iolioli">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>iolioli</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iolioli</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Python 日语 境外旅游攻略</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/07/%E5%BE%AE%E4%BF%A1%E8%85%BE%E8%AE%AF%E7%BD%91%E5%8D%A1VS%E6%94%AF%E4%BB%98%E5%AE%9D%E9%98%BF%E9%87%8C%E5%AE%9D%E5%8D%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/03/07/%E5%BE%AE%E4%BF%A1%E8%85%BE%E8%AE%AF%E7%BD%91%E5%8D%A1VS%E6%94%AF%E4%BB%98%E5%AE%9D%E9%98%BF%E9%87%8C%E5%AE%9D%E5%8D%A1/" class="post-title-link" itemprop="url">微信腾讯网卡VS支付阿里宝卡</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-03-07 19:11:40" itemprop="dateCreated datePublished" datetime="2019-03-07T19:11:40+08:00">2019-03-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-03-09 00:14:14" itemprop="dateModified" datetime="2019-03-09T00:14:14+08:00">2019-03-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="微信支付-VS-支付宝"><a href="#微信支付-VS-支付宝" class="headerlink" title="微信支付 VS 支付宝"></a>微信支付 VS 支付宝</h1><p>作为一个线上交易小商家更愿意用支付宝收款，用支付宝收款可以积累门诊报销金、大病报销金，一个月下来也能积累不少，相当于买了一份保险。</p>
+<p>作为个人也更愿意用支付宝付款，每次付款都可以累积积分，获得蚂蚁森林能量，增加芝麻信用分，在积分会员这方面支付宝做的更完善，比如积分兑换天猫超市优惠券、兑换优酷VIP、信用住酒店。</p>
+<p>支付宝提现、信用卡还款可以用积分兑换额度，相当于提现免费。微信目前还没有。</p>
+<h1 id="腾讯王卡-VS-阿里宝卡"><a href="#腾讯王卡-VS-阿里宝卡" class="headerlink" title="腾讯王卡 VS 阿里宝卡"></a>腾讯王卡 VS 阿里宝卡</h1><p>王卡每天最少1元，因为只要你开数据链接就会收费，而阿里宝卡月租19元套餐内含1G的流量，最低一个月是19元，在饿了么订外卖还可以获赠流量，不要餐具的话还可以获得蚂蚁森林能量，我自己已经足够用了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/10/%E7%A8%8B%E5%BA%8F%E4%BB%8E%E7%BC%96%E5%86%99%E3%80%81%E6%89%A7%E8%A1%8C%E5%88%B0%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/12/10/%E7%A8%8B%E5%BA%8F%E4%BB%8E%E7%BC%96%E5%86%99%E3%80%81%E6%89%A7%E8%A1%8C%E5%88%B0%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">程序从编写、执行到返回结果经历了什么</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2018-12-10 00:04:53 / 修改时间：00:11:33" itemprop="dateCreated datePublished" datetime="2018-12-10T00:04:53+08:00">2018-12-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="解释器"><a href="#解释器" class="headerlink" title="解释器"></a>解释器</h1><p>先在<a href="https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe" target="_blank" rel="noopener">Download Python 3.6.2</a>下载安装 Python，一路回车（不要改安装目录）后就安装好了 Python，然后打开IDLE，界面如图</p>
+<p><img src="/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727133805.png" alt=""></p>
+<p>我们看到的这个界面就是我们和 Python 对话的窗口，我们给它输入命令执行，它处理后告诉我们结果（这个过程叫返回），这个东西叫作 <strong>shel</strong>l，可以在顶部看到“Python 3.6.2rc1 shell”，光标前面的<strong>&gt;&gt;&gt;</strong>符号叫作<strong>shell 提示符。</strong></p>
+<p>我们输入一个命令</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"我在学习 Python"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>然后马上可以看到shell返回了一个结果显示在屏幕上</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我在学习 Python</span><br></pre></td></tr></table></figure>
+
+<p>print() 是一个命令，这个命令可以把括号里你传入的东西显示在屏幕上，这个命令就是干这个的。因为我们输入的是一句话，所以把它用双引号括起来，这样的数据类型叫作字符串(string)，字符串也可以用单引号括起来，返回的结果一样。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'我在学习 Python'</span>)</span><br><span class="line">我在学习 Python</span><br></pre></td></tr></table></figure>
+
+<p>到这里我们知道了 <code>print()</code> 命令和字符串的概念，但是不管你用什么语言编写代码，都是要交给计算机执行的，而计算机是是不知道这些代码是什么意思的，那计算机是怎么执行的呢。其实我们一开始安装 Python 的同时安装了 Python 解释器，解释器相当于一个翻译，把一种语言的语法、规则等翻译成机器码让计算机执行。解释器好比计算机语言的生存环境，没有这个环境，用该语言编写的程序也无法执行，即使你有一段Python代码，如果那台计算机上没有安装Python解释器，那这段代码就运行不了。</p>
+<p>一种计算机语言包含了各种语法、规则、语法规则的解释器、相关的文档等。人和人的交流也是如此困难，何况和计算机，所以你的命令一定要符合 Python 的语法规则，否则就会出错。假如你漏掉了一个引号就会出错</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">"我在学习 Python)</span></span><br><span class="line"><span class="string">SyntaxError: EOL while scanning string literal</span></span><br></pre></td></tr></table></figure>
+
+<p>凡是不能让解释器顺利翻译，导致出错的情况都叫 bug，找出错误叫 debug，学习任意一种计算机语言这两个词都将伴随你。</p>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>前面提到了字符串的概念，以及如何表示字符串。字符串是一种<strong>数据类型</strong>（Data Type），其他基本的数据类型还有整型（整数），浮点型（小数），这也是人类语言的基本组成，是计算机语言的共性，因为计算机语言是为人类服务的嘛。先作一个简单的数学运算</p>
+<p>输入 2+2 回车让Python 计算一下</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="number">2</span> + <span class="number">2</span></span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<p>2+2 叫做表达式（_expression_），是Python语言最基本的指令，表达式由值（value）和操作符（operator）组成，比如上例中数字2和加号分别是值，操作符。值（value）的类型可以是整型、浮点型、字符串等。表达式可以只有一个值，这意味着Python中，在哪儿都可以使用值，可以只输入一个值，然后返回</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="number">2</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<p>这样没有问题。</p>
+<p>操作符有很多，和数学运算有关的有</p>
+<table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="left">操作</th>
+<th align="left">举例</th>
+<th align="left">举例结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="left">加法</td>
+<td align="left">2 + 2</td>
+<td align="left">4</td>
+</tr>
+<tr>
+<td align="left">_</td>
+<td align="left">减法</td>
+<td align="left">6 - 3</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">乘法</td>
+<td align="left">3＊５</td>
+<td align="left">１５</td>
+</tr>
+<tr>
+<td align="left">／</td>
+<td align="left">除法</td>
+<td align="left">８ / 4</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">**</td>
+<td align="left">求平方</td>
+<td align="left">2 ** 4</td>
+<td align="left">16</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">求余数</td>
+<td align="left">11 % 3</td>
+<td align="left">2</td>
+</tr>
+</tbody></table>
+<p>值可以是任一种数据类型，可以是整型、浮点型、字符串型等，可以把整型、浮点型看作数字值，字符串型看作文本值。如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; print(&#39;我在&#39;+&#39;学习&#39; + &#39;Python&#39;)</span><br><span class="line">我在学习Python</span><br></pre></td></tr></table></figure>
+
+<p>该例中的<code>+</code>操作符不是加号，它的功能就是把字符串连起来。<strong>操作符是一个广义的概念，包括但不限于数学运算符。</strong></p>
+<p><strong>值（包含整型、浮点数、字符串这些数据类型，）和操作符是解释器能够识别的最小单元</strong>。</p>
+<h1 id="变量与赋值"><a href="#变量与赋值" class="headerlink" title="变量与赋值"></a>变量与赋值</h1><p>先看实例</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">"上野树里"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>name</span><br><span class="line"><span class="string">'上野树里'</span></span><br></pre></td></tr></table></figure>
+
+<p>这里<code>=</code>这个符号叫<strong>赋值符号</strong>不是等于号，name 叫变量，可以看到，name 的值变成了字符串’<strong>上野树里</strong>‘。变量的值可以改变，即我们可以重新给它赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; name &#x3D; &#39;新垣结衣&#39;</span><br><span class="line">&gt;&gt;&gt; name</span><br><span class="line">&#39;新垣结衣&#39;</span><br></pre></td></tr></table></figure>
+
+<p>给name重新赋值后，name 的值变成了字符串’<strong>新垣结衣</strong>‘。</p>
+<p>前面的举例都是在shell里进行，只能一行一行地执行，没法保存，我们的程序不可能只有一行代码，所以我们在文本编辑器里编写代码，Ctrl+N 新建一个文件就打开了Python自带的文本编辑器，输入下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;what&#39;s your name&quot;)</span><br><span class="line">myName &#x3D; input()</span><br><span class="line">print(&quot;My name is &quot; + myName)</span><br></pre></td></tr></table></figure>
+
+<p>保存后，点击 Run- Run Module F5 ，可以执行这一段程序，然后在shell 里显示执行结果。这三行代码分别表示</p>
+<ol>
+<li>第一行在屏幕上显示“what’s your name”，询问你的名字</li>
+<li>第二行接收键盘的输入，从键盘输入你的名字</li>
+<li>第三行在屏幕显示你的名字</li>
+</ol>
+<p>input()、 print() 是两个最基本的函数（命令）一个从键盘接收命令，一个返回执行的结果。连接字符串的 <code>+</code>** **操作符就是在这样的情况下使用的。</p>
+<p>Python 自带的编辑器比较简陋，功能少。我们还可以选择其他的编辑器，比如 <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text  编辑器</a> ， 这些编辑器有“自动补全”、语法检查等功能，是编程的好助手。</p>
+<p>试试把上面那三行代码复制到 Sublime Text 编辑器里保存到<strong>C:\Users\Administrator\</strong> 目录下，命名为<strong>test.py</strong> 。选择Python模式，保存时不需要指定后缀名。Python文件的后缀是py 。</p>
+<p><img src="/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727160241.png" alt=""></p>
+<p>那怎么运行保存好的代码呢？按win + R 输入cmd 后打开Windows系统命令行输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python test.py</span><br></pre></td></tr></table></figure>
+
+<p>可以看到执行结果。</p>
+<p><img src="/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727160539.png" alt=""></p>
+<p>为什么会这样呢？在安装python时，安装程序会自动把 python shell 添加到 Windows 的系统变量（计算机-属性-高级系统设置-环境变量-系统变量-Path 查看），在Windows命令行中输入 python后，系统会调用python  shell 运行 test.py 程序，然后返回运行结果。</p>
+<p>如果只输入 Python就会进入python shell 这时候看到了&gt;&gt;&gt; 这个提示符。</p>
+<p>如果代码文件在你的home 目录下（我以Administrator账户登录，所以home 目录就是<strong>C:\Users\Administrator\</strong>），那么可以不指定文件位置，如果不在home 目录下就需要指定文件位置。复制test.py 到D盘根目录下，要执行的话需要指定文件路径</p>
+<p><img src="/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727163622.png" alt=""></p>
+<p>注意文件路径是两个\，因为反斜杠  在python里是有定义的，表示“<strong>转义</strong>”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a &#x3D; &#39;what\&#39;s&#39;</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">&quot;what&#39;s&quot;</span><br></pre></td></tr></table></figure>
+
+<p>因为字符串可以用单引号或双引号表示，如果字符串里含有单引号的话可以用反斜杠<code>\</code>来“转义”，代表它是一个单引号，而不是表示字符串。</p>
+<h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h2><p>写程序就是进行各种数据交换的过程，就会涉及文件的打开、读取、写入、关闭等操作。</p>
+<p>经过上一步在D盘下有test.py这个文件 ，我们可以直接通过编写程序查看文档内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; f &#x3D; open(r&#39;D:\test.py&#39;, &#39;r&#39;)</span><br><span class="line">&gt;&gt;&gt; f.read()</span><br><span class="line">&#39;print(&quot;what\&#39;s your name&quot;)\n\nmyName &#x3D; input()\n\nprint(&quot;My name is &quot; + myName)\n&#39;</span><br><span class="line">&gt;&gt;&gt;f.close()</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>用open() 函数打开文件，文件路径用字符串表示，因为字符串里含有反斜杠，所以在前面加一个r，这样就不会有歧义，后面的<code>r</code>表示以“只读”方式打开，属于open() 函数的一个参数。</li>
+<li>用read() 函数读取文件内容，返回后的内容是一个字符串类型</li>
+<li>用f.close()函数关闭文件</li>
+</ol>
+<p>如果文件不存在会报错，打开的文件一定要关闭，因为文件操作非常频繁，所以设计了更方便的方式</p>
+<p>用</p>
+<blockquote>
+<p>with open() as f:</p>
+</blockquote>
+<p>的方式</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">with</span> open(<span class="string">r'D:\test.py'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.read()</span><br><span class="line"></span><br><span class="line"><span class="string">'print("what\'s your name")\n\nmyName = input()\n\nprint("My name is " + myName)\n'</span></span><br></pre></td></tr></table></figure>
+
+<p>我们可以看到读取的内容以字符串的形式返回，字符串里还有\n，表示换行，我们的test.py文件里确实有换行。这个过程发生了什么，想一下。</p>
+<p>我们再看一下，直接输入<code>python</code></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>python</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#66&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    python</span><br><span class="line">NameError: name <span class="string">'python'</span> <span class="keyword">is</span> <span class="keyword">not</span> defined</span><br></pre></td></tr></table></figure>
+
+<p>提示python未定义，输入<code>&#39;python&#39;</code>再看一下</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'python'</span></span><br><span class="line"><span class="string">'python'</span></span><br></pre></td></tr></table></figure>
+
+<p>没有问题。只输入python虽然人类认识，但python解释器不认识，解释器只认识经过定义的东西，也就是说代码里所有的内容都要符合python的规则。加上引号<code>&#39;python&#39;</code>说明传入的是一个字符串。</p>
+<h2 id="写入文件"><a href="#写入文件" class="headerlink" title="写入文件"></a>写入文件</h2><p>类似读文件，写文件要经历打开、写入、关闭三个过程</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>f = open(<span class="string">r'D:\test.txt'</span>,<span class="string">'w'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f.write(<span class="string">'Python 有意思 '</span>)</span><br><span class="line"><span class="number">11</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f.close()</span><br></pre></td></tr></table></figure>
+
+<p>如果文件不存在会自动创建，记得关闭文件。现在手动打开test.txt文件，查看一下内容，“Python 有意思”被写入。</p>
+<p>再执行下面代码</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;f = open(<span class="string">r'D:\test.txt'</span>,<span class="string">'w'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f.write(<span class="string">'Python is interesting'</span>)</span><br><span class="line"><span class="number">21</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f.close()</span><br></pre></td></tr></table></figure>
+
+<p>test.txt内容变成了“Python is interesting”，原来的内容被覆盖了。如果你想接着前面的内容写入怎么办，比如你在网上下载小说，小说是一章一章的，你想把第二章放在第一章内容的后面。这种情况需要改变文件打开模式。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>f = open(<span class="string">r'D:\test.txt'</span>,<span class="string">'a'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f.write(<span class="string">'\nPython 有意思 '</span>)</span><br><span class="line"><span class="number">13</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f.close()</span><br></pre></td></tr></table></figure>
+
+<p><code>w</code> 模式会覆盖原来的内容，<code>a</code> 模式可以直接在已有的内容后面写入，保留原来的内容。还有其他的模式，如果你以后需要用到就得自己查了。不管哪本教材都只能涉及最常用的，不代表全部，所以要勤于搜索，勤于查文档。</p>
+<p><code>\n</code> 表，示换行。</p>
+<p>类似读文件，也可以用</p>
+<blockquote>
+<p>with open() as f:</p>
+</blockquote>
+<p>的方式</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">with</span> open(<span class="string">r'D:\test.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">'Hello, world!'</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">13</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="编码-解码"><a href="#编码-解码" class="headerlink" title="编码 解码"></a>编码 解码</h1><p>在我们打开文件关闭文件的同时其实经过了计算机解码、编码，机器不认识人类的语言，所以写入文件的时候需要编码便于机器保存，读取文件时要解码给人看。牢记这句话</p>
+<blockquote>
+<p>解码给人看，编码给机器处理</p>
+</blockquote>
+<p>通用的编码/解码方式是UTF-8，也是默认的编码方式。我们前面写文件读文件没有感觉到编码解码的存在是因为处理的是默认uft-8编码的纯文本。假如打开一个用二进制保存的图片或者word文档就能感觉到编码了。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>编程不是难在语言本身，而是难在和周边各种各样的交流，交流就要涉及数据交换，交换数据又牵扯到数据格式转换等。我们先把人类语言转换成python语言（python 的数据类型）让python解释器认识，解释器又运行在操作系统上，解释器还需要和操作系统交流，比如前面提到的文件路径、系统环境变量、编码/解码这些问题，难的是这些知识。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/%E7%BB%99%E8%A1%8C%E6%94%BF%E9%83%A8%E9%97%A8%E7%9A%84%E5%BB%BA%E8%AE%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/12/01/%E7%BB%99%E8%A1%8C%E6%94%BF%E9%83%A8%E9%97%A8%E7%9A%84%E5%BB%BA%E8%AE%AE/" class="post-title-link" itemprop="url">给行政部门的建议</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2018-12-01 15:43:57 / 修改时间：20:03:34" itemprop="dateCreated datePublished" datetime="2018-12-01T15:43:57+08:00">2018-12-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>每次去行政部门办事都觉得去了一趟原始社会，作为一个热心的办事群众办完事都会在政务网给相关部门提意见，记录一下过去提的建议。有的是做得不到位，有的是严重失职的。</p>
+<h2 id="行政部门做事不到位"><a href="#行政部门做事不到位" class="headerlink" title="行政部门做事不到位"></a>行政部门做事不到位</h2><p><strong>用客服软件代替咨询电话</strong></p>
+<p>这一点是我最不理解的，为什么这时候还要用电话这种落后的方式。难道政府部门的领导从来没有网购过吗？客服软件相比电话至少有这些优点：</p>
+<ul>
+<li>可以和多人同时聊天，电话不可以。咨询电话是万年打不通啊</li>
+<li>大部分咨询都是类似的问题，可以把回答设置成快捷短语，方便快捷</li>
+<li>客服软件可以发文字、图片、链接比单纯的语音要高效太多了</li>
+</ul>
+<p><strong>配置身份证专用复印机</strong></p>
+<p>工商办理很多环节都需要粘贴办理人的身份证，虽然工商局提供免费复印，可是还需要办理人手动把身份证那块剪出来然后用固体胶粘上去（难以置信有的窗口用的竟然是液体胶），非常繁琐。强烈建议配置“身份证专用复印机”,打印后直接粘贴，一千多块钱，长久来看经济实惠效率还高，用传统的复印件打印身份证A4纸一半都浪费了，一年这省下来的纸钱就够买一台身份证专用复印机了。</p>
+<h2 id="行政部门失职"><a href="#行政部门失职" class="headerlink" title="行政部门失职"></a>行政部门失职</h2><p><strong>营业执照丢失不需要登报公示</strong></p>
+<p>本人在办理公司迁入登记时因为丢失了营业执照副本被告知必须先登报公示，可是根据“国发〔2018〕28号”：对营业执照遗失或损毁申请补领的，不再要求申请人委托媒体刊登作废声明，改为在审批部门官方网站免费发布公告。原文见<a href="http://www.gov.cn/zhengce/content/2018-08/03/content_5311485.htm" target="_blank" rel="noopener">中华人民共和国中央人民政府网站</a>。希望贵单位确认。</p>
+<p>我也不知道是不是我的提醒，反正第二次再去的时候就不需要登报公示了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/11/taiwan-jingdian-yuyue/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/12/11/taiwan-jingdian-yuyue/" class="post-title-link" itemprop="url">台湾景点猫空缆车龙坑官网预约</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-12-11 21:10:26 / 修改时间：21:44:37" itemprop="dateCreated datePublished" datetime="2017-12-11T21:10:26+08:00">2017-12-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="猫空缆车座位预约"><a href="#猫空缆车座位预约" class="headerlink" title="猫空缆车座位预约"></a>猫空缆车座位预约</h2><p>翻墙后登录<a href="https://ssl.metro.taipei/gondolabooking/" target="_blank" rel="noopener">猫空缆车官网</a></p>
+<ol>
+<li>点击要预约的日期后，可以看到不同时刻的剩余预约人数。</li>
+<li>选择普通车厢或者水晶车厢，选搭乘时间</li>
+<li>填写申请人资料，需要填通行证、国籍、手机或电话、预约人数（需要注意6岁以下儿童虽然不收费，但是也要预约作为。假如一个大人带一个6岁以下的孩子就需要预约2个座位。）、邮箱，填写后点击“下一步”。</li>
+<li>保存或打印预约单。因为官网原因大通证号码显示不全没有关系，最主要的是条形码。</li>
+</ol>
+<h2 id="龙坑-南仁山生态保护区拼团"><a href="#龙坑-南仁山生态保护区拼团" class="headerlink" title="龙坑 南仁山生态保护区拼团"></a>龙坑 南仁山生态保护区拼团</h2><p>翻墙后登录<a href="http://reservapion-s.ktnp.gov.tw/merge.aspx" target="_blank" rel="noopener">龙坑南仁山生态保护区环境教育系统</a>，进来后就是拼团页面</p>
+<ol>
+<li>选择龙坑上午或下午，选拼团人多的这样拼团成功率会高一点，超过10人拼团就成功了。</li>
+<li>填写资料后点“送出”</li>
+<li>填写每个访客的姓名通行证资料，送出</li>
+<li>确认资料无误后送出，会生成一个<strong>序号</strong>，这个序号需要记下来。等拼团人数超过10人会通知你付款。<br><img src="/images/%E9%BE%99%E5%9D%91%E6%8B%BC%E5%9B%A2.png" alt="龙坑拼团"></li>
+</ol>
+<h2 id="故宫定时导览预约"><a href="#故宫定时导览预约" class="headerlink" title="故宫定时导览预约"></a>故宫定时导览预约</h2><p>翻墙后登陆<a href="https://signup.npm.edu.tw/" target="_blank" rel="noopener">故宫博物院线上报名系统</a>，选择“中文定時導覽”-“我要报名”-“申请”-选择时间（每天4个时间，每个时间段15个名额：9:30/10:00/14:30/16:00) 导览全程免费，大概1个半小时到2个小时左右。可以提前三个月报名，额满截止。可以看到剩余名额。</p>
+<ol>
+<li>选好日期后，填写资料，证件选护照，填大通证号码。</li>
+<li>确认信息，打印或截图即可。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/09/taiwan-lvyou/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/12/09/taiwan-lvyou/" class="post-title-link" itemprop="url">台湾10日环岛旅游攻略</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-12-09 18:25:46 / 修改时间：22:32:16" itemprop="dateCreated datePublished" datetime="2017-12-09T18:25:46+08:00">2017-12-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>马蜂窝和穷游的问答板块上有各种各样的提问，其中最多的就是行程规划，虽然大数据人工智能发展了这么久，可是还没有一个好用的可以帮助规划行程的工具，我以台湾环岛旅游为例总结一下出国旅游如何规划行程。</p>
+<h2 id="挑选景点"><a href="#挑选景点" class="headerlink" title="挑选景点"></a>挑选景点</h2><p>一般出发前我们首先会了解有哪些景点，通过浏览别人的游记等选出了自己中意的一些景点，比如挑选出了101大楼、台北故宫博物院、清境农场、太鲁阁、清水断崖、九份、十分、后壁湖、鹅銮鼻、日月潭、阿里山、平溪线、猫空缆车等等。</p>
+<h2 id="城市归类"><a href="#城市归类" class="headerlink" title="城市归类"></a>城市归类</h2><p>我们选了一大堆自己中意的景点然后把它们按照城市分类，城市内的交通不需要担心一般是地铁、公交出租车。分类后</p>
+<ol>
+<li>101大楼、台北故宫博物院、猫空缆车属于台北市内</li>
+<li>九份、十分、平溪线属于新北市，离台北不远</li>
+<li>后壁湖、鹅銮鼻在垦丁</li>
+<li>太鲁阁在花莲</li>
+</ol>
+<p>这差不多是台湾最受欢迎的几个旅游地点了。</p>
+<h2 id="城市切换"><a href="#城市切换" class="headerlink" title="城市切换"></a>城市切换</h2><p>城市之间切换是行程规划中最麻烦的，因为我们要把桃园机场、台北、新北、垦丁、花莲这几个城市连起来，坐什么车，还要考虑如何合理地分配时间，这就需要查每一段行程需要的时间。</p>
+<p>要想知道时间就要了解台湾有什么交通，查询后发现台湾有高铁、台铁（类似我们的火车）。但是高铁只有南港-左营（高雄市）这一段才有<br><img src="/images/%E5%8F%B0%E6%B9%BE%E9%AB%98%E9%93%81.png" alt="台湾高铁线路"></p>
+<p>台铁是环整个岛都有，了解这些后就可以查询：</p>
+<ol>
+<li>机场到台北坐什么车，用时多久。一般机场到市内都有机场巴士。</li>
+<li>新北市的火车站叫瑞芳站，台北到新北可以坐台铁，到了瑞芳站就可以坐公交或者出租到其他地方了。</li>
+<li>去垦丁不方便，一般都是台北站乘高铁到左营站，左营站就可以乘垦丁快线到垦丁</li>
+<li>垦丁和花莲之间没有直达的台铁，必须经过枋寮站中转。另外通过看游记还可以拼车。</li>
+<li>花莲到瑞芳、花莲都台北都有直达</li>
+</ol>
+<p>所以具体的安排可以有很多种</p>
+<ol>
+<li>桃园机场-桃园高铁站-左营站-垦丁-枋寮站-花莲-瑞芳-台北-桃园机场</li>
+<li>桃园机场-台北-花莲-枋寮站-垦丁-左营站-台北-瑞芳-台北-桃园机场</li>
+</ol>
+<p>到一下站坐什么车，用时大概多久都需要查清楚，路线规划的差不多以后再买票。</p>
+<p><a href="https://irs.thsrc.com.tw/IMINT?locale=tw" target="_blank" rel="noopener">高铁购票官网</a><br><a href="http://railway.hinet.net/" target="_blank" rel="noopener">台铁购票官网</a></p>
+<p>再去淘宝比比价格，会发现高铁票有早鸟票65折、8折、9折，还有针对外国人的乘车券而且是90天有效，不限车次。</p>
+<h2 id="其他准备"><a href="#其他准备" class="headerlink" title="其他准备"></a>其他准备</h2><p>WiFi 或者电话卡。<br>如果是多人同行或者带的行李较多可以包车接机。<br>护照+签证（去台湾需要大陆通行证+G签+入台证）<br>机票+住宿</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/24/win10-install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/11/24/win10-install/" class="post-title-link" itemprop="url">win10 UEFI+GPT模式安装：解决磁盘包含MBR分区</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-11-24 21:41:58" itemprop="dateCreated datePublished" datetime="2017-11-24T21:41:58+08:00">2017-11-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-04-17 14:45:33" itemprop="dateModified" datetime="2019-04-17T14:45:33+08:00">2019-04-17</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本文将整理安装 win10 遇到的一些典型问题。</p>
+<h2 id="制作启动盘"><a href="#制作启动盘" class="headerlink" title="制作启动盘"></a>制作启动盘</h2><p>在<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN我告诉你</a>下载win0最新版，下载U盘启动制作软件<a href="http://rufus.akeo.ie/" target="_blank" rel="noopener">rufus</a>，巨好用不到1M的大小，用默认方式制作就好。不要用老毛桃、博士装机、winpe等，装完就是一堆360、腾讯全家桶。</p>
+<h2 id="UEFI-legacy模式，-MBR-GPT分区方式介绍"><a href="#UEFI-legacy模式，-MBR-GPT分区方式介绍" class="headerlink" title="UEFI legacy模式， MBR GPT分区方式介绍"></a>UEFI legacy模式， MBR GPT分区方式介绍</h2><p>UEFI、BIOS是引导系统安装的程序，UEFI可以看做BIOS的新一代，将取代BIOS，所以如果电脑支持uefi引导最好通过uefi安装，现在的电脑基本都支持了。MBR、GPT表示磁盘的分区方式，GPT设计来取代MBR。 如果你的电脑支持uefi但你就想通过老式BIOS来安装，那就要将boot mode 切换为legacy。</p>
+<p>但是如果你的电脑支持UEFI安装，那默认会按照UEFI方式安装，如果你强行以legacy模式安装的话就会出现</p>
+<blockquote>
+<p>Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘</p>
+</blockquote>
+<p>所以支持UEFI就用UEFI安装不要浪费了，用UEFI模式安装，且把磁盘改成gpt分区。在选语言的安装界面按<strong>shift+F10</strong>进入命令行，如图<br><img src="/images/diskpart.jpg" alt="进入命令行界面"></p>
+<p>输入<code>diskpart</code>回车，就会自动进入Diskpart模式.<br>输入<code>list disk</code>，列出磁盘<br>输入<code>select disk 0</code>，选中那个磁盘（根据你的实际情况，不一定是disk 0）<br>输入<code>clean</code>，清除MBR分区<br>输入<code>convert gpt</code>，转为gpt分区<br>输入<code>exit</code>退出Diskpart<br>输入<code>exit</code>退出，这时返回了安装界面</p>
+<p>这样就可以安装了。</p>
+<h2 id="一直在准备就绪"><a href="#一直在准备就绪" class="headerlink" title="一直在准备就绪"></a>一直在准备就绪</h2><p>第一次安装win10在这里的时间特别长，根据电脑配置情况不同，我用一台老笔记本安装足足用了30分钟，第一次安装以为出问题了就强制重启了，第二次没管先去洗澡了，洗完后发现到了下一步。</p>
+<p>这一步一定要耐心一点，不然可能导致</p>
+<blockquote>
+<p>计算机意外地重新启动或遇到错误。Windows 安装无法继续。若要安装Windows，请单击“确定”重新启动计算机，然后重新启动安装</p>
+</blockquote>
+<h2 id="U盘恢复"><a href="#U盘恢复" class="headerlink" title="U盘恢复"></a>U盘恢复</h2><p>用 rufus 制作的系统U盘删除文件就可以了。有的人是淘宝购买的系统盘，这种会留下一个<code>CD驱动器：系统U盘</code>，格式化不了，这种情况最简单的办法是下载chipgenius来检测U盘的flash型号，然后下载对应flash型号的量产工具即可修复。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/20/book-kindle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/10/20/book-kindle/" class="post-title-link" itemprop="url">令人浑身颤抖、无法自拔庆幸读到的好书</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-10-20 21:29:08" itemprop="dateCreated datePublished" datetime="2017-10-20T21:29:08+08:00">2017-10-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-10-21 09:07:24" itemprop="dateModified" datetime="2017-10-21T09:07:24+08:00">2017-10-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="1984-乔治·奥威尔"><a href="#1984-乔治·奥威尔" class="headerlink" title="1984 乔治·奥威尔"></a><a href="http://amzn.to/2zpkicd" target="_blank" rel="noopener">1984 乔治·奥威尔</a></h3><p><img src="/images/1984.jpg" alt="1984"><br>连岳唯二推荐的文学书（另外一本是<a href="https://amazon.cn/gp/product/B018DX56Q8/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B018DX56Q8&linkCode=as2&tag=pangolin0b-23&linkId=7fec0666533572fb4c3cc5c1a67e9375" target="_blank" rel="noopener">了不起的盖茨比</a>），作为一本文学书情节设定本身已经惊世骇俗，再加上我多多少少了解一点99年以前的历史，而且读的时候谷歌刚刚被封，新一轮xx愈演愈烈，带入感太过强烈仿佛自己就在书中冒险，真的是浑身颤抖并且小心翼翼地地读完的。</p>
+<p>如果单凭这些是不足以谈庆幸的，庆幸的是看完这本书后我又偶然看到了阮一峰的<a href="http://www.ruanyifeng.com/blog/2009/10/why_i_love_programming.html" target="_blank" rel="noopener">我为什么喜欢编程</a>以及他的其他文章，后来我开始慢慢学习计算机技术，为自己打开了一扇窗就为了实用，在这之前我是没什么动力的。</p>
+<h3 id="香水-帕·聚斯金德"><a href="#香水-帕·聚斯金德" class="headerlink" title="香水 帕·聚斯金德"></a><a href="https://www.amazon.cn/s/ref=as_li_ss_tl?_encoding=UTF8&camp=536&creative=3132&crid=YOKPI209922H&field-keywords=%E9%A6%99%E6%B0%B4%20%E4%B8%80%E4%B8%AA%E8%B0%8B%E6%9D%80%E7%8A%AF%E7%9A%84%E6%95%85%E4%BA%8B&linkCode=ur2&rh=i%3Aaps%2Ck%3A%E9%A6%99%E6%B0%B4%20%E4%B8%80%E4%B8%AA%E8%B0%8B%E6%9D%80%E7%8A%AF%E7%9A%84%E6%95%85%E4%BA%8B&sprefix=%E9%A6%99%E6%B0%B4%2Cdigital-text%2C319&tag=pangolin0b-23&url=search-alias%3Daps" target="_blank" rel="noopener">香水 帕·聚斯金德</a></h3><p><img src="/images/%E9%A6%99%E6%B0%B4.jpg" alt="香水"><br>这是一部让人恶心、寒毛直竖用<strong>鼻子</strong>来感受的小说，比《百年孤独》更魔幻，比《达芬奇密码》更刺激，一个神秘邪恶的人为了提取少女的体香，竟然把她杀死熬制，十恶不赦，就在最后将要接受绞刑的时候他打开了香水瓶子，等着审判他的人们闻到香味以后忘情群P，改编的电影这一幕也是相当震撼。<br><img src="/images/%E7%94%B5%E5%BD%B1%E9%A6%99%E6%B0%B4.png" alt="电影香水"></p>
+<h3 id="刀与星辰-徐皓峰影评集"><a href="#刀与星辰-徐皓峰影评集" class="headerlink" title="刀与星辰 徐皓峰影评集"></a>刀与星辰 徐皓峰影评集</h3><p><img src="/images/%E5%88%80%E4%B8%8E%E6%98%9F%E8%BE%B0.jpg" alt="刀与星辰"></p>
+<p>徐皓峰本来就是教电影的老师，这是他的影评集，读完后我觉得自己不仅可以分辨好电影和坏电影，还能从画面中窥探到导演的意图以及无可奈何。该影评集多半都聚焦在武侠片上，并且细致地分析了李安、张艺谋、陈凯歌、徐克几位大导演，精彩绝伦不能详述，摘录几段：</p>
+<ol>
+<li><p>常规武打片的慢镜头是为了表现动作造型，而李安的慢镜头是相互凝视，弹性十足的竹林被李安拍成了一张大床。尤其一个动作设计，是两人在一根竹子上僵持，玉娇龙企图将李慕白弹飞，而李慕白在竹尖丝毫不动，如猫戏鼠般微笑，这是显露无功有高手风范，但也是在调情。</p>
+</li>
+<li><p>影视作品里，霍元甲被日本医生毒死，但一个仇视日本人的人为何要聘日本医生？这是《精武门》系列作品的软肋。上海有钱人聘请日本医生，以轿车接送来彰显身份，霍元甲随俗了。</p>
+</li>
+</ol>
+<h3 id="何伟三部曲"><a href="#何伟三部曲" class="headerlink" title="何伟三部曲"></a><a href="http://amzn.to/2zoyJNW" target="_blank" rel="noopener">何伟三部曲</a></h3><p><img src="/images/%E4%BD%95%E4%BC%9F%E4%B8%89%E9%83%A8%E6%9B%B2.jpg" alt="何伟三部曲"><br>包括《江城》、《寻路中国-从乡村到工厂的自驾之旅》、《奇石》，还有一本《甲骨文》很遗憾这本并未在大陆出版，这本书里还记录了对姜文的采访。一个在中国生活的外国人描写的中国人的生活，中国人的脆弱与敏感你好像很熟悉又很陌生，这个人的作品就是这样吸引着你，柴静看过以后重写了<a href="http://amzn.to/2zplXyH" target="_blank" rel="noopener">看见</a>，这是一本让你重新审视文字力量的书。</p>
+<h3 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h3><p><a href="http://www.ruanyifeng.com/blog/2006/05/peter_hessler_oracle_bones.html" target="_blank" rel="noopener">阮一峰：Peter Hessler的《甲骨》（ Oracle Bones ）</a><br><a href="https://book.douban.com/annotation/18445560/" target="_blank" rel="noopener">何伟笔下的姜文</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/18/living-philosophy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/10/18/living-philosophy/" class="post-title-link" itemprop="url">生活的智慧 相见恨晚的物品</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-10-18 08:31:26" itemprop="dateCreated datePublished" datetime="2017-10-18T08:31:26+08:00">2017-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-05-28 21:17:01" itemprop="dateModified" datetime="2019-05-28T21:17:01+08:00">2019-05-28</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>以前看连岳写过一篇《学会浪费》，他说所谓的节省很多时候都是在虐待自己。下面一个评论说：用不着的东西占据着你几万块一平方的房子觉得值吗？想想也是哈。</p>
+<p>又想起王垠博客里的《<a href="http://www.yinwang.org/blog-cn/2017/07/08/living-philosophy" target="_blank" rel="noopener">生活的智慧</a>》，虽然王垠在知乎被黑的很惨，几个关注的人也对他颇有微词，但是我真的从他的博客学到不少东西，正好也写写自己用过的好东西，生活中物品的更换并不仅仅是钱的问题，背后反映的也是观念的改变。</p>
+<h3 id="文化办公"><a href="#文化办公" class="headerlink" title="文化办公"></a>文化办公</h3><p>首先是提高生产力的东西。</p>
+<p><a href="https://www.smartisan.com/" target="_blank" rel="noopener">TNT系统</a></p>
+<p>首先得有一部坚果手机，目前坚果 pro2s、坚果R1 两款机型支持，现在不光是一些应用手机端比桌面端好友，很多社会服务都选择了在微信公众号里办理，可是微信一次只能打开一个页面，万一填错了就得重新填，尤其是那种需要刷脸验证的。所以如果某个服务在支付宝和微信都能办理的话我会选择支付宝，因为支付宝支持复制。</p>
+<p>另外TNT真的是淘宝天猫买家神器。</p>
+<p><a href="https://s.click.taobao.com/G5zxUZw" target="_blank" rel="noopener">Kindle Paperwhite 3</a> (958元)</p>
+<p>kindle 我只用来看书，其他功能一概不要，就看中它轻便、长续航、不伤眼这三点。</p>
+<p>20190528更新：现在我已经对小说社会类的书不感兴趣了，这些作品只能当娱乐来消遣了。</p>
+<p><a href="https://s.click.taobao.com/QEbtUZw" target="_blank" rel="noopener">初品空白页笔记本 B5</a> （4.5元）</p>
+<p><img src="/images/B5%E8%AE%B0%E4%BA%8B%E6%9C%AC.png" alt="初品空白页笔记本 B5"></p>
+<p>我上学的时候很不喜欢记笔记，有什么需要记的也都直接写在教材上，笔记本从来都是写完就扔，而且我的笔记本等写完的时候基本面目全非，全都被我上课无聊的时候乱写乱画了。我喜欢空白页的笔记本不喜欢带横线的，而且要是车线本那种带环的我用不了。对我来说B5大小的笔记本正好，四十几张纸厚度也合适。</p>
+<p>另外我有一些特殊需求还会常备方格本。</p>
+<p><img src="/images/%E6%96%B9%E6%A0%BC%E6%9C%AC.png" alt="初品方格本"></p>
+<p><a href="https://s.click.taobao.com/R4KmUZw" target="_blank" rel="noopener">三菱UM-151 中性笔</a> (5.5元)</p>
+<p><img src="/images/um151.png" alt="三菱UM-151"></p>
+<p>0.38mm的 UM-151 和0.5mm的 UM-100 可谓“笔中扫地僧”一样的存在，虽然看起来不起眼用过以后就离不开了，可以应对大多数纸张，不会不小心沾一手黑，经久耐用掉地上了捡起来直到墨用完的最后一刻依然流畅，都是一盒一盒的买。</p>
+<p><a href="https://s.click.taobao.com/I05jUZw" target="_blank" rel="noopener">慕娜美3000 纤维笔</a> (1元)<br><img src="/images/monami%E6%B0%B4%E5%BD%A9%E7%AC%94.png" alt="慕娜美水彩纤维笔"><br>虽然被定位成水彩笔，但是黑色蓝色完全可以当成日常用笔，写出的字非常好看，只卖1块钱良心到哭。</p>
+<p><a href="https://www.amazon.co.jp/%E3%81%82%E3%81%8B%E3%81%97%E3%82%84-SA-300-%E7%AD%86%E3%83%9A%E3%83%B3-%E6%96%B0%E6%AF%9B%E7%AD%86/dp/B001C4T73Y/ref=sr_1_4?ie=UTF8&qid=1508293261&sr=8-4&keywords=%E3%81%82%E3%81%8B%E3%81%97%E3%82%84" target="_blank" rel="noopener">あかしや 新毛笔</a>（28元）<br><img src="/images/akashiya.png" alt="あかしや 新毛笔"></p>
+<p>喜欢写字的不要错过，国内好像只有<a href="https://s.click.taobao.com/jKYTUZw" target="_blank" rel="noopener">无印良品</a>有这样的笔，毛笔用起来实在太麻烦了，这种笔可以给你毛笔那样的感觉。对于那些指望用硬笔练字来修身养性的言论我只能呵呵。</p>
+<h3 id="清洁用品"><a href="#清洁用品" class="headerlink" title="清洁用品"></a>清洁用品</h3><p><a href="https://s.click.taobao.com/Eui1C9w" target="_blank" rel="noopener">飞利浦电动牙刷</a> （399元）</p>
+<p>从手动刷牙到用电动牙刷刷牙真的是一个质的飞跃，巴氏刷牙法手动刷牙太累了有没有。充一次电可以用很久，不过我还是喜欢装电池的。</p>
+<p><a href="https://s.click.taobao.com/NABXUZw" target="_blank" rel="noopener">手持吸尘器</a>（129元）<br><img src="/images/%E5%90%B8%E5%B0%98%E5%99%A8.png" alt="美的手持吸尘器"><br>家里难免会有灰尘，而最讨厌的当数床头、冰箱顶、键盘这些地方，这时候一个小巧的手持吸尘器就派上用场了。</p>
+<p><a href="https://s.click.taobao.com/Ta31UZw" target="_blank" rel="noopener">LEC 地板擦</a> （70元）<br><img src="/images/%E5%9C%B0%E6%9D%BF%E6%93%A6.png" alt="地板擦"><br>这个完全是从王垠的博客看来的以前根本不知道。干湿两用擦桌子擦地板皆可，静电纸可以吸附头发细小杂物，用完后把纸一丢就完事了，再也不用洗拖把了。</p>
+<h3 id="厨具用品"><a href="#厨具用品" class="headerlink" title="厨具用品"></a>厨具用品</h3><p><a href="https://s.click.taobao.com/SqVyTZw" target="_blank" rel="noopener">Ergo CHEF榨汁机</a>（298元）<br><img src="/images/%E6%A6%A8%E6%B1%81%E6%9C%BA.png" alt="榨汁机"><br>榨汁超快，虽说是榨果汁还可以用在其他地方，还是做汤做西红柿炒蛋的神器，蔬菜汁还可以和面做饼吃。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/03/jlpt-n1-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/10/03/jlpt-n1-test/" class="post-title-link" itemprop="url">如何准备日语一级考试(JLPT N1)</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-10-03 17:11:49 / 修改时间：17:46:20" itemprop="dateCreated datePublished" datetime="2017-10-03T17:11:49+08:00">2017-10-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="备考资料"><a href="#备考资料" class="headerlink" title="备考资料"></a>备考资料</h1><p>备考资料只需要历年真题和《耳から覚える日本語能力試験 》这两本就够了。《耳から覚える日本語能力試験 》又分为语法和词汇，很多人把这本书浪费了，仅仅用它来背语法、背单词。</p>
+<p>这本书正确的用法是来练习听力</p>
+<p>练习听力的同时顺便理解语法</p>
+<p>听力才是决定你能不能（高分）通过的关键，如果你能听懂了，那阅读自然不在话下。</p>
+<h1 id="练习听力"><a href="#练习听力" class="headerlink" title="练习听力"></a>练习听力</h1><p>该书正确的使用方法：</p>
+<p>先不要看原文一句一句地听，比如第一个语法是や否や，录音会先读语法点再读例句，仔细听例句是怎么断句的，听的时候就要注意这个语法是怎么接续的，例句是</p>
+<blockquote>
+<p>空が暗くなるや否や大粒の雨が降りはじめた</p>
+</blockquote>
+<p>你会听到おおつぶのあめ，如果你不知道「大粒」这个词，那你听的时候至少要转化成「おおつぶの雨」，你要能把おおつぶ听出来，要把每一个音（假名）都能听出来。这就是在训练听力呀。不要为了练习听力而听，不要为了背单词而背单词，这本书就是为了让你边听、边理解、边记。</p>
+<p>把每一个例句完全搞懂，录音放在手机里随时听，一个单元大概12个例句也就是12句话，4分钟左右，设置单元循环播放，播放几次后，一读到语法点你就想起了例句是啥，你不需要刻意背就记住了。背单词也是这样。</p>
+<p>另外再推荐这本书，外研社出的，有中文解释</p>
+<p>国内所有的能力考试语法书都离不开这本，包括上面耳から覚える，上面那本很多例句都是要么把这本书的例句的前半句改一下，要么把后半句改一下，有的干脆照搬这本书的例句。</p>
+<h1 id="N1语法剖析"><a href="#N1语法剖析" class="headerlink" title="N1语法剖析"></a>N1语法剖析</h1><p>语法要死记硬背吗？N1的语法是什么？</p>
+<p>N1的语法偏书面化一点，几乎所有的N1语法你都可以用已经学过的语法表达出来，也就是说只是表达方式的不同，或者在表达的意思上有轻微的不同，这个时候是为了让表达更精确，更接近于你想表达的意思。</p>
+<p>在干货开始之前，请确认下面这些的基本用法你已经掌握</p>
+<blockquote>
+<p>から　まで<br>こそ<br>こと　　もの　<br>ただ　のみ<br>である　ではない<br>と　という<br>となる　とする<br>とも　ども<br>になる　にする<br>は　も　で/ても　<br>ばかり　ところ<br>条件形ば 意志形 可能形</p>
+</blockquote>
+<p>N1的语法就是在这些基本用法上面的一点点变形。不熟悉的请看<a href="https://yuedu.baidu.com/ebook/ca797d481fd9ad51f01dc281e53a580216fc502c" target="_blank" rel="noopener">可以阅读的日语自学手册</a>。</p>
+<p><strong>ない之外的未然形</strong></p>
+<p>ない这种未然形我们已经很熟悉了，除此之外的未然形还有ず　ざる　まい</p>
+<p>よるーよらず</p>
+<p>べからざる　べからず</p>
+<p>まい比较特殊，是在动词原形后面加まい，比如 ある的这种未然形是 あるまい（更多解释请度娘）</p>
+<p>另外一个技巧是</p>
+<h1 id="把假名转化成汉字"><a href="#把假名转化成汉字" class="headerlink" title="把假名转化成汉字"></a>把假名转化成汉字</h1><p>很多语法通常写成假名，但是这些假名是有对应的汉字的，看了汉字你就恍然大悟了，比如N1语法</p>
+<blockquote>
+<p>いかん  いかんによらず</p>
+</blockquote>
+<p>写成这样</p>
+<blockquote>
+<p>如何　如何によらず</p>
+</blockquote>
+<p>是不就明白多了，同样的很多用法都是手到擒来，比如</p>
+<blockquote>
+<p>かたわら　傍ら<br>きらいがある　嫌いがある<br>にかかわる　に関わる<br>にたえない　に耐えない<br>まみれ　塗れ<br>ゆえ（に）　故（に）<br>ごとき　如き（如く）<br>にあたらない　に当たらない<br>にひきかえ　に引き換え<br>にもまして　にも況して<br>をよそに　を余所に<br>しまつだ　始末だ<br>てやまない　て止まない<br>ないではおかない　ないでは置かない<br>にかたくない　に難くない<br>ずにはすまない　ずには済まない<br>そばから　側から</p>
+</blockquote>
+<p>这些用法只要你知道汉字是什么意思，一目了然啊，相当于就记一个单词，根本不需要花多大功夫，何况很多你已经认识了。</p>
+<p>有一些编在语法书上完全就是凑数的，比如</p>
+<blockquote>
+<p>限りだ<br>に関わる<br>始末だ<br>に耐えない</p>
+</blockquote>
+<p>这些就是一个普通名词或动词。</p>
+<p>有一些看似很长的只要“转个弯”就行了，拆开相当于是两个否定</p>
+<blockquote>
+<p>ないもの    でもない<br>ないでは    おかない<br>ずには      おかない</p>
+</blockquote>
+<p>有的完全是误导人，比如からある，看一个例句</p>
+<p>その男は三十キロからある荷物をひょうと肩に担いっだ<br>这句话断句应该是这样的</p>
+<p>その男は三十キロから        ある荷物をひょうと肩に担いっだ<br>我们知道から表示“起点”，而ある日、ある時、ある人物就相当于某日某时某人，这样的表达应该早就见过了，所以这句话的字面意思是“那个男人把三十斤起的 某物 抗在了肩上”。</p>
+<p>除去这些简单变形的语法，真正需要理解记忆的就剩下</p>
+<blockquote>
+<p>がてら<br>が早いか<br>や否や<br>っぱなし<br>なり…</p>
+</blockquote>
+<p>也没多少了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/01/mannga-dorama-japanese/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/10/01/mannga-dorama-japanese/" class="post-title-link" itemprop="url">如何有效地看日剧动漫来学日语</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-10-01 19:35:22 / 修改时间：20:12:09" itemprop="dateCreated datePublished" datetime="2017-10-01T19:35:22+08:00">2017-10-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="快速学语法"><a href="#快速学语法" class="headerlink" title="快速学语法"></a>快速学语法</h1><p>教材在我看来就是<strong>文章+录音+语法讲解</strong>。</p>
+<p>传统教学里老师就是对照课文遇到语法点讲解一下，布置作业辅导一下，通过大量的习题来巩固语法。对照教材学习其实是从文章中揪出语法来，聪明的同学会先看一遍语法讲解，再跟着老师的讲解过一遍。可是等到一学期一本书学完了发现没学多少语法，几年下来也没学多少。</p>
+<p>其实我们完全可以快速地先学习语法。然后用大量的阅读、听力材料来验证、巩固这些语法，把老师给替换掉。</p>
+<h1 id="积累单词-理解语法"><a href="#积累单词-理解语法" class="headerlink" title="积累单词 理解语法"></a>积累单词 理解语法</h1><p>日剧动漫是特别好的材料，完全代替教材文章+录音的功能，有剧本、有剧情、有多个人的发音、有场景比教材丰富多了。既然是学习就要抱着学习的态度，而不是娱乐的态度。</p>
+<p>争取把每一句话都听懂，这就需要你遇到单词要查，出现新的语法也要查，跟着教材学不也是这样做的吗。</p>
+<p>一句话听完以后再跟着模仿剧中人物的口吻对着siri说一遍，安卓可以用simeji语音输入法，看它能不能识别你说的话，把识别后的文本顺便保存在文档里，这就是你的<strong>语料库</strong></p>
+<p>三步走</p>
+<ol>
+<li>听懂（查单词，查语法）</li>
+<li>说（模仿，练习口语）</li>
+<li>记录（语音识别，验证发音）作为语料库</li>
+</ol>
+<p>举例<br>下面是日剧最完美的离婚中的台词</p>
+<blockquote>
+<p>頭がいいとか、知識があるとかより、人を元気にできることの方がよっぽど価値がある。素直でまっすぐに生きていてる方が周りを幸せにする。</p>
+</blockquote>
+<p>看到不会的单词就查，比如よっぽど<br>记忆模糊的语法重新查一下手册，就这句里包含的语法有</p>
+<ul>
+<li>とか</li>
+<li>より　ほう　作比较</li>
+<li>两个形容词并列该怎么表达</li>
+<li>にする</li>
+<li>こと</li>
+</ul>
+<p>把不明白的查过以后，语音识别转换成文本，你要是说的不准可识别不了哦，这就相当于给你的反馈，发音是不是正确，老师做的事情也不过如此。</p>
+<h1 id="练习听力和口语"><a href="#练习听力和口语" class="headerlink" title="练习听力和口语"></a>练习听力和口语</h1><p>选一部你喜欢的现代剧认认真真的按照这样的节奏学下去，火影忍者这样的动漫是不行的，一开始会感觉很困难，万事开头难嘛，这一步得走，后面就顺利多了，大概两个月吧。</p>
+<p>接下来就是不看日文字幕了，因为这时候词汇量也有了，基本语法也掌握了，慢慢地听写，然后看你的句子顺不顺，对照中文字幕看意思对不对。</p>
+<p>我当时听了金田一少年事件薄，很多话现在还记着呢，我没有刻意地去背，不过一遍又一遍地听所、一遍一遍地复读，所以记住了。</p>
+<blockquote>
+<p>この手紙をあなたが読む頃、私はもう生きてはいないでしょ、昨日あの三人の話を聞いてから、私の心はこの顔と同じように醜くなりつつあります。心まで変わり果てる前に、命を絶つつもりです。不思議ね今は悲しいことも後悔もないの、手を伸ばせば天国に触れられるように気がするから。</p>
+</blockquote>
+<p>注：这是自杀的女孩给男朋友的遗书，女孩被另外三个人毁容了，所以自杀了。男朋友为她复仇的故事。可是男的并没有看到这封信。</p>
+<p>つつ 的用法我就是在这里学到的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

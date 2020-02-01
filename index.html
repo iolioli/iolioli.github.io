@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="iolioli">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="iolioli">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>iolioli</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iolioli</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Python 日语 境外旅游攻略</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/NexT%E5%8D%87%E7%BA%A7-%E6%8D%A2%E7%94%B5%E8%84%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/01/NexT%E5%8D%87%E7%BA%A7-%E6%8D%A2%E7%94%B5%E8%84%91/" class="post-title-link" itemprop="url">hexo NexT升级/换电脑</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-01 12:58:44 / 修改时间：14:14:30" itemprop="dateCreated datePublished" datetime="2020-02-01T12:58:44+08:00">2020-02-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>NexT主题升级或者换电脑最方便的办法就是重新安装一遍。先备份原来的博客文件夹，等重新安装以后把文章、图片以及修改过的地方重新改一遍，所以有了这篇，不然我也忘了自己改了哪些东西了。 </p>
+<p>更新后的版本如下：</p>
+<blockquote>
+<p>hexo-cli: 3.1.0<br>node: 12.14.1<br>next: 7.7.0</p>
+</blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/01/NexT%E5%8D%87%E7%BA%A7-%E6%8D%A2%E7%94%B5%E8%84%91/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/08/Word-ppt%E5%8A%9E%E5%85%AC%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/08/Word-ppt%E5%8A%9E%E5%85%AC%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">Word/ppt办公实用技巧</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-08 14:37:48 / 修改时间：15:19:03" itemprop="dateCreated datePublished" datetime="2020-01-08T14:37:48+08:00">2020-01-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="基本的文档排版"><a href="#基本的文档排版" class="headerlink" title="基本的文档排版"></a>基本的文档排版</h1><h2 id="生成目录-插入页眉页脚页码"><a href="#生成目录-插入页眉页脚页码" class="headerlink" title="生成目录/插入页眉页脚页码"></a>生成目录/插入页眉页脚页码</h2><p>编写文档的时候顺便设置好各级标题，然后</p>
+<blockquote>
+<p>引用-目录-自动目录</p>
+</blockquote>
+<p>经常使用的可以保存为模板下次直接用。</p>
+<h2 id="制作教程类电子书-多语言排版"><a href="#制作教程类电子书-多语言排版" class="headerlink" title="制作教程类电子书/多语言排版"></a>制作教程类电子书/多语言排版</h2><h1 id="图文设计（也适用于PPT）"><a href="#图文设计（也适用于PPT）" class="headerlink" title="图文设计（也适用于PPT）"></a>图文设计（也适用于PPT）</h1><p>Office 不仅是一个字处理软件，也是一个强大的设计软件，一些基本设计用word/ppt要比PS快多了。比如常用的时间轴设计。</p>
+<p>1、项目符号+线段</p>
+<p>2、插入小图形+线段</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/23/%E8%B6%8A%E5%8D%97%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5%EF%BC%9A%E7%AD%BE%E8%AF%81%E6%9C%BA%E7%A5%A8%E9%85%92%E5%BA%97%E6%99%AF%E7%82%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/23/%E8%B6%8A%E5%8D%97%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5%EF%BC%9A%E7%AD%BE%E8%AF%81%E6%9C%BA%E7%A5%A8%E9%85%92%E5%BA%97%E6%99%AF%E7%82%B9/" class="post-title-link" itemprop="url">越南旅游攻略：签证机票酒店景点</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-23 23:30:29" itemprop="dateCreated datePublished" datetime="2019-12-23T23:30:29+08:00">2019-12-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-31 20:33:49" itemprop="dateModified" datetime="2020-01-31T20:33:49+08:00">2020-01-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="签证"><a href="#签证" class="headerlink" title="签证"></a>签证</h1><p>越南可以落地签但是比较麻烦，无论是便利程度还是价格都不如提前办另纸签（单独一张纸，不粘贴到护照上），只需要拍护照首页即可，基本1个工作日就能出签，包邮价格205元。</p>
+<p><strong>入境是不用给海关小费的，都是被国内旅游团给惯的</strong>。</p>
+<h1 id="旅游路线"><a href="#旅游路线" class="headerlink" title="旅游路线"></a>旅游路线</h1><p>越南旅游的经典路线是：</p>
+<blockquote>
+<p>胡志明 美奈 大叻 芽庄 会安  岘港 顺化  河内 </p>
+</blockquote>
+<p><img src="/images/202001311944.jpg" alt="越南景点分布图">  </p>
+<p>可以按照个人需求删减为下面五个城市</p>
+<blockquote>
+<p>胡志明 美奈 大叻  芽庄 岘港</p>
+</blockquote>
+<p>越南境内交通主要以巴士为主，巴士主要是<a href="https://futabus.vn/en-US" target="_blank" rel="noopener">FUTA</a>、<a href="https://m.thesinhtourist.vn/tourlist/bt" target="_blank" rel="noopener">新咖啡</a>、<a href="http://hanhcafe.vn/" target="_blank" rel="noopener">汉咖啡</a>三家公司运营，直接在淘宝代订或者去越南再购买，当地有巴士公司营业点。</p>
+<p>其中胡志明、美奈（籓切站）、芽庄、河内可以坐火车来往。<br>胡志明、岘港、河内、芽庄国内有航线直达。</p>
+<p>国内可从南宁站坐跨境火车到达越南<strong>嘉琳站</strong>（每天只有一班下午6点半发车，第二天一早到达河内），再坐1路公交到河内站。</p>
+<h1 id="交通方式"><a href="#交通方式" class="headerlink" title="交通方式"></a>交通方式</h1><p>胡志明-美奈：FUTA/新咖啡大巴 5小时<br>美奈-大叻：巴士 4小时<br>大叻-芽庄：巴士 3小时<br>芽庄-会安：①新咖啡19:00巴士 11小时 ②飞机到岘港 1小时，岘港-会安坐公交40分<br>岘港-顺化：巴士3小时<br>顺化-河内：巴士或火车都得15小时  </p>
+<p>入境后打车可以下载Grab APP，电话卡可以提前买好。</p>
+<p>越南人的社交软件主要是Zalo，国内手机号也可以注册。</p>
+<h1 id="机票酒店"><a href="#机票酒店" class="headerlink" title="机票酒店"></a>机票酒店</h1><p>机酒是旅行花费中的大头，也是最容易省出钱的。越贵的机酒差价越大，因为代理也是一层又一层，价格变化也有<strong>时差</strong>，有很多低价特惠的机酒是不能在携程、飞猪、马蜂窝这些平台上出售的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/28/%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%A4%96%E4%BA%BA%E6%89%8D%E5%BC%95%E8%BF%9B%E8%90%BD%E6%88%B7%E6%B5%81%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/05/28/%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%A4%96%E4%BA%BA%E6%89%8D%E5%BC%95%E8%BF%9B%E8%90%BD%E6%88%B7%E6%B5%81%E7%A8%8B/" class="post-title-link" itemprop="url">深圳市外人才引进落户流程</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-05-28 14:59:37" itemprop="dateCreated datePublished" datetime="2019-05-28T14:59:37+08:00">2019-05-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-11 14:35:00" itemprop="dateModified" datetime="2019-10-11T14:35:00+08:00">2019-10-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="落户流程"><a href="#落户流程" class="headerlink" title="落户流程"></a>落户流程</h1><p>交社保一个月-通过人才测评申报-体检-办准迁证-办迁移证-落户/办身份证  </p>
+<p>前期准备资料如下：</p>
+<ul>
+<li>身份证正反面</li>
+<li>户口本</li>
+<li>毕业证书</li>
+<li>学信网在线学历认证有效期半年</li>
+</ul>
+<h2 id="毕业生、在职人才引进测评与申报"><a href="#毕业生、在职人才引进测评与申报" class="headerlink" title="毕业生、在职人才引进测评与申报"></a>毕业生、在职人才引进测评与申报</h2><p>需要在深圳市缴纳1个月社保有接收单位，然后注册登录<a href="http://hrss.sz.gov.cn/" target="_blank" rel="noopener">深圳人力资源和社会保障局</a>-人才引进（毕业生、在职人才引进测评与申报系统），根据提示填写信息，3天左右会收到结果。通过后会收到《招用员工通知》和手机短信指标卡，记录好指标卡编号，后面要用到。</p>
+<h2 id="体检"><a href="#体检" class="headerlink" title="体检"></a>体检</h2><p>去指定医院体检，<a href="https://hrsspub.sz.gov.cn/rcyj/businessQurey.do?method=checkHospitalList" target="_blank" rel="noopener">深圳市拟引进市外人员体检医院名单</a>，就近选择。医院有专门的入户体检通道，体检完毕当天下午3点就能知道结果，体检表上要盖章登记，注意不要把体检编号写错，医院会把体检合格结果上传到人社局系统。大概2天就会录入。</p>
+<p>在<a href="http://113.98.245.68:8088/szbdc-vweb/notes0" target="_blank" rel="noopener">深圳市不动产登记信息查询</a>自助生成无房证明。</p>
+<h2 id="户籍迁入"><a href="#户籍迁入" class="headerlink" title="户籍迁入"></a>户籍迁入</h2><p>在<a href="http://ga.sz.gov.cn/" target="_blank" rel="noopener">深圳市公安局</a>-户籍迁入—-招调工户籍迁入。单位没有集体户的话户口选择派出所代管。接着按要求填写信息上传证件，准迁证选择邮寄方式或自取。前面提到的资料都需要上传图片。这一步最好在电脑上操作，微信里面太费劲了。大约一周准迁证就下来了，带准迁证到户籍地办理迁移证，可让家人代办。</p>
+<h2 id="办理落户"><a href="#办理落户" class="headerlink" title="办理落户"></a>办理落户</h2><p>迁移证办好后去公安局办理落户，先在深圳市公安局公众号预约，需要准备电子照片和回执。</p>
+<p>（回执就是一个公安系统的照片编号，可以在支付宝搜索“证件照带回执”自助办理，后面办理金融社保卡也需要照片回执。深圳这样的城市竟然在行政大厅没有自助拍照设备，难免让人怀疑），当场办结，身份证大概10个工作日办好，可以选择邮寄。</p>
+<h2 id="申请租房和生活补贴"><a href="#申请租房和生活补贴" class="headerlink" title="申请租房和生活补贴"></a>申请租房和生活补贴</h2><p>在人力资源和社会保障局官网-新引进人才租房和生活补贴，按照要求填写材料，注意毕业日期要和毕业证书上的日期一致。</p>
+<p>银行卡只要是一类卡就行，外地卡也可，可以不是社保卡。</p>
+<p>这月申请的下个月会汇总，大概一个半月后公示，公示5个工作日结束后大概半个月会收到补贴。整个流程下来近3个月。</p>
+<hr>
+<h2 id="关于社保"><a href="#关于社保" class="headerlink" title="关于社保"></a>关于社保</h2><p>如果人不在深圳市上班可以找挂靠交社保，社保挂靠的话外地户籍交医疗保险可以交三档，算下来是五百多，医疗保险一档是九百多，注意别被坑太多。可选然后自己申请落户，没必要花钱让代理办。整个过程中就体检、到派出所落户和办新身份证才需要出门，一共2次，其他流程都是网上进行的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/25/%E5%85%8D%E8%B4%B9%E5%8F%AF%E5%95%86%E7%94%A8%E4%B8%AD%E6%97%A5%E6%96%87%E5%A5%BD%E7%9C%8B%E5%AD%97%E4%BD%93%E6%8E%A8%E8%8D%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/05/25/%E5%85%8D%E8%B4%B9%E5%8F%AF%E5%95%86%E7%94%A8%E4%B8%AD%E6%97%A5%E6%96%87%E5%A5%BD%E7%9C%8B%E5%AD%97%E4%BD%93%E6%8E%A8%E8%8D%90/" class="post-title-link" itemprop="url">免费可商用中日文好看字体推荐</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-05-25 14:00:15 / 修改时间：15:52:27" itemprop="dateCreated datePublished" datetime="2019-05-25T14:00:15+08:00">2019-05-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我写《可以阅读的日语自学手册》的时候要中日混合输入，所以希望有一个统一的字体能够覆盖中日文，正好思源黑体、思源宋体满足，感谢谷歌，另外又搜罗了几个好看的中日文字体。</p>
+<p><a href="https://github.com/adobe-fonts/source-han-sans/tree/release" target="_blank" rel="noopener">思源黑体</a>，在这个页面下载你需要的语言。  </p>
+<p><a href="https://github.com/adobe-fonts/source-han-serif/tree/release" target="_blank" rel="noopener">思源宋体</a></p>
+<p><a href="https://www.dynacw.com.cn/search/search.aspx?sk=%E5%9C%86%E4%BD%93" target="_blank" rel="noopener">华康圆体</a></p>
+<p><a href="https://github.com/ButTaiwan/gensen-font" target="_blank" rel="noopener">源泉圓體</a>，由思源黑体变形而来，也有日文字体的变形版。</p>
+<p><a href="http://font.kim/" target="_blank" rel="noopener">機械彫刻用標準書体</a>，去日本的时候在街上看到的，特意谷歌搜到的，最适合用硬应玻璃板材质上，好看的不得了。</p>
+<p>下面2个不是免费的，但是实在在太好看了，记录一下。</p>
+<p><a href="https://www.wazu.jp/gallery/views/View_epkyouka.html" target="_blank" rel="noopener">EPSON 教科書体M</a></p>
+<p><a href="https://www.morisawa.co.jp/fonts/specimen/1278" target="_blank" rel="noopener">はるひ学園</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/11/%E7%94%B7%E5%A3%AB%E5%8C%96%E5%A6%86%E7%AE%80%E6%98%93%E6%AD%A5%E9%AA%A4%E9%99%84%E4%BA%A7%E5%93%81%E6%8E%A8%E8%8D%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/05/11/%E7%94%B7%E5%A3%AB%E5%8C%96%E5%A6%86%E7%AE%80%E6%98%93%E6%AD%A5%E9%AA%A4%E9%99%84%E4%BA%A7%E5%93%81%E6%8E%A8%E8%8D%90/" class="post-title-link" itemprop="url">男士化妆简易步骤附产品推荐</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-05-11 23:13:38" itemprop="dateCreated datePublished" datetime="2019-05-11T23:13:38+08:00">2019-05-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-05-14 23:24:29" itemprop="dateModified" datetime="2019-05-14T23:24:29+08:00">2019-05-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>为什么要化妆当然是为了好看了，亲测化妆后走在路上明显和女孩子的对视增多了☺，整个人也精神了。</p>
+<h1 id="清洁-洗头洗脸"><a href="#清洁-洗头洗脸" class="headerlink" title="清洁 洗头洗脸"></a>清洁 洗头洗脸</h1><p>首先把头发洗干净，不管留什么样的发型头发要整洁不能翘起来不能有头屑。至于用什么样的洗发水因人而异，自从在日本酒店里用过宝丽Pola的洗护用品后就马上入手了，可能因为宝丽的其他产品太出众掩盖了洗护产品的光芒。味道清淡不刺鼻。</p>
+<p><a href="https://s.click.taobao.com/bNmPRAw" target="_blank" rel="noopener">Pola洗发水护发素</a></p>
+<p>洗脸不用多说洗面奶是必备的，资生堂旗下的UNO是个不错的选择，我一直用绿色的用完不紧绷，味道清淡算是大众化产品。</p>
+<p><a href="https://s.click.taobao.com/FjZORAw" target="_blank" rel="noopener">UNO洗面奶</a></p>
+<h1 id="修眉-除毛"><a href="#修眉-除毛" class="headerlink" title="修眉 除毛"></a>修眉 除毛</h1><p>画眉毛可能是整个化妆过程中最容易忽视的环节了，眉毛没画好的话眼妆画的再好也会被眉毛拖累的，眉毛绝对是画龙点睛一样的存在，太多女孩子都不太会画眉明明是个小脸却留两条宽阔无比的一字眉。画眉之前先修眉，一般的店里修眉只知道修边缘的杂毛就完事了，很多人的眉型都不聚拢没有眉峰，这时候就要自己造一条眉峰出来，准备一个小剪刀太长的可以剪短，眉毛较多处可以拔掉几根。修眉刀选那种带把的容易操作。</p>
+<p><a href="https://s.click.taobao.com/zyvKPAw" target="_blank" rel="noopener">贝印修眉刀</a></p>
+<p>不光可以修眉还可以除手臂、腿部、指关节的毛，比脱毛膏要简单方便多了，脱毛膏、喷雾有效成分都是一样的，用后臭味难消黑斑点经久不退。脸部的小黄毛去掉，便于后面的步骤。好多女孩子嘴唇和鼻子中间的黄毛都没除，粉底又遮不住留出这一块怪怪的。</p>
+<h1 id="隔离-粉底"><a href="#隔离-粉底" class="headerlink" title="隔离 粉底"></a>隔离 粉底</h1><p>这一步是化腐朽为神奇的一步，皮肤黑毛孔大这些问题都能显著改善。隔离是为了和后面的一些彩妆隔离开免得和皮肤直接接触同时可以保湿。</p>
+<p><a href="https://s.click.taobao.com/lAJKRAw" target="_blank" rel="noopener">纽西之谜隔离霜</a></p>
+<p><a href="https://s.click.taobao.com/ExgJRAw" target="_blank" rel="noopener">SUGAO隔离</a></p>
+<p><a href="https://s.click.taobao.com/AMpIRAw" target="_blank" rel="noopener">资生堂MAQuillAGE隔离</a></p>
+<p>粉底可以当作隔离的加强版，比隔离更厚重颗粒更大，可以填补毛孔遮盖痘印。</p>
+<p><a href="https://s.click.taobao.com/ykSIRAw" target="_blank" rel="noopener">ZFC粉底液</a>  </p>
+<p><a href="https://s.click.taobao.com/D5ZIRAw" target="_blank" rel="noopener">美宝莲fit me粉底液</a></p>
+<h1 id="防晒"><a href="#防晒" class="headerlink" title="防晒"></a>防晒</h1><p>太阳和干燥是皮肤的两大杀手，防晒重中之重，不过还是打伞最方便。</p>
+<p><a href="https://s.click.taobao.com/GxiJPAw" target="_blank" rel="noopener">Biore碧柔防晒霜</a></p>
+<p><a href="https://s.click.taobao.com/bMkIPAw" target="_blank" rel="noopener">嘉娜宝防晒霜</a></p>
+<p>最后画眉，眉毛整齐的话可以省了，嘴唇干燥的话涂点润唇膏就完了。</p>
+<h1 id="卸妆"><a href="#卸妆" class="headerlink" title="卸妆"></a>卸妆</h1><p>用卸妆水，参考卸妆水使用方法。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/01/2019%E5%A4%9A%E5%B8%81%E7%A7%8D%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%A8%E8%8D%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/05/01/2019%E5%A4%9A%E5%B8%81%E7%A7%8D%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%A8%E8%8D%90/" class="post-title-link" itemprop="url">2019多币种信用卡推荐</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-05-01 21:40:24 / 修改时间：22:17:32" itemprop="dateCreated datePublished" datetime="2019-05-01T21:40:24+08:00">2019-05-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>以下适用于经常网上海淘、境外旅游或者频繁地用外币支付的人。如果不经常用的话无所谓啦。</p>
+<p>首先旗帜鲜明地排除四大国有银行，手里有工行的环球旅行卡，虽然是多币种但境外网上付款3D验证还必须用IE浏览器手机都无法支付，2019年呀这个大妈行。</p>
+<p>剩下的在浦发、民生、招行这些里面选。</p>
+<p>经过我的实际体验推荐浦发银行的信用卡，下卡快额度高，以前从来没有办过浦发的借记卡或者信用卡，第一次办额度是3万，申请材料也简单。使用过程中完全没找过客服，因为用其他银行的卡出现的问题在浦发这里都没有遇到过。人民币<strong>实时</strong>记账自动购汇，支付宝微信都可以还款并且都有还款提醒，工行的不显示代还款金额。而民生的消费是提醒外币金额，只有等到账单日才会显示人民币金额。</p>
+<p>当然都是刷5次或消费5千即可免年费的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/01/Python%E5%85%A5%E9%97%A8%E5%88%9D%E5%AD%A6%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94%E5%90%88%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/05/01/Python%E5%85%A5%E9%97%A8%E5%88%9D%E5%AD%A6%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">Python入门初学常见问题解答合集</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-05-01 20:17:04 / 修改时间：21:25:20" itemprop="dateCreated datePublished" datetime="2019-05-01T20:17:04+08:00">2019-05-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><a href="http://blog.konghy.cn/2017/04/24/python-entry-program/" target="_blank" rel="noopener"> if <strong>name</strong> == ‘<strong>main</strong>‘ 该如何理解</a></li>
+<li><a href="https://www.ibm.com/developerworks/cn/opensource/os-cn-python-yield/index.html" target="_blank" rel="noopener">yield 使用浅析</a><br>注意：如果版本是python 3.x 上例中的next(）应当替换为<strong>next</strong>()</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/17/%E6%97%A5%E6%9C%AC%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D%EF%BC%88%E7%89%B9%E4%BB%B7%E6%9C%BA%E7%A5%A8%E9%85%92%E5%BA%97%E9%A2%84%E8%AE%A2-%E8%B7%AF%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/17/%E6%97%A5%E6%9C%AC%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D%EF%BC%88%E7%89%B9%E4%BB%B7%E6%9C%BA%E7%A5%A8%E9%85%92%E5%BA%97%E9%A2%84%E8%AE%A2-%E8%B7%AF%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%89/" class="post-title-link" itemprop="url">日本旅游攻略基本介绍（特价机票酒店预订+路线导航）</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-17 14:54:05" itemprop="dateCreated datePublished" datetime="2019-04-17T14:54:05+08:00">2019-04-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-01 13:27:36" itemprop="dateModified" datetime="2020-02-01T13:27:36+08:00">2020-02-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="路线换乘并不复杂"><a href="#路线换乘并不复杂" class="headerlink" title="路线换乘并不复杂"></a>路线换乘并不复杂</h1><p>如果你打算去日本旅游，看日本游记里都会提到日本的交通复杂，因为游记作者经常拿整个日本或者整个东京的路线图出来，可不是就显得复杂嘛！实际上你又不是每个地方都去。</p>
+<p>拿东京来说一个JR山手线就基本覆盖热门站点了</p>
+<p><img src="/images/2020-02-01_13-24-26.jpg" alt="JR山手线"><br>上野 池袋 新宿 原宿 涩谷都是中转大站。</p>
+<p>在同一个站换乘更是不用担心，因为都有很明显的标识指引，每一条线都有编号而且都用不同的颜色表示，跟着指示走就行了，如下图银座线用G表示。JR山手线用JY表示，每一个站也有编号JR山手线的东京站编号是JY01。</p>
+<p><img src="/images/2020-02-01_13-25-16.jpg" alt="上野站"><br>上车后每个车门上方都有屏幕报站。唯一需要注意的是不要坐错了方向，看清楚是去哪个方向的，站点指示会写“上野/日暮里方面”就是去上野站方向的。</p>
+<h1 id="导航-刷卡进站"><a href="#导航-刷卡进站" class="headerlink" title="导航 刷卡进站"></a>导航 刷卡进站</h1><p>导航查路线换乘都可以用<strong>Y！案内</strong>、<strong>Y! Map</strong>这2个APP来搞定，国产安卓手机因为阉割掉了谷歌服务所以需要安装谷歌服务才能导航。如何安装请自行百度，小米手机的话建议直接刷成国际版的系统好了，一身轻松没广告。</p>
+<p><img src="/images/2020-02-01_13-26-49.jpg" alt="售票机"></p>
+<p>坐车东京内一张suica卡就可以了，用不着在国内提前买直接在站点机器上就可以购买。换钱也不用提前在国内银行换，可以在机场直接用支付宝兑换。便利店也可以用支付宝付款。</p>
+<h1 id="机票-酒店-签证-上网"><a href="#机票-酒店-签证-上网" class="headerlink" title="机票 酒店 签证 上网"></a>机票 酒店 签证 上网</h1><p>机票最好提前半年订，学生党有固定假期再合适不过了，11月可以说是整个旅游行业的淡季，双11不要只惦记着买衣服哦，这时候的机票最划算了。平时关注一下航空公司的公众号有促销的话马上订，可以省下不少钱。</p>
+<p>现在的日本单次签证已经很好办理了，不需要年薪10万，只需要护照、照片、全日制专科学历就行了，学生党更是容易。</p>
+<p>关于住宿其实Airbnb上民宿的性价比很低，要么距离远要么需要和房主分享房间，价格距离合适又是单独入住的房间太少了。而酒店的选择就太多了，即使是樱花季的热门酒店也很难全住满。酒店一般会有好几个价格的因为房间空着也是浪费，不如偷偷打个折，去咸鱼上找一下代订又能省一笔。</p>
+<p>上网直接开漫游即可，价格和买手机卡差不多，速度超快，机场车站都有免费WiFi速度超快的。</p>
+<h1 id="景点"><a href="#景点" class="headerlink" title="景点"></a>景点</h1><p>热门景点都是人挤人，我自己不喜欢逛这些景点和走在菜市场的感觉差不多。这次去了一个几乎没人的特色街道，非常安静，恰好还有松本清药妆店。<br><img src="/images/2020-02-01_13-27-24.jpg" alt="椎名町"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/17/%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BAMIUI%E5%AE%89%E8%A3%85%E5%9B%BD%E9%99%85%E7%89%88%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iolioli">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/17/%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BAMIUI%E5%AE%89%E8%A3%85%E5%9B%BD%E9%99%85%E7%89%88%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">小米手机MIUI安装国际版教程，可以完美升级</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-17 14:08:09" itemprop="dateCreated datePublished" datetime="2019-04-17T14:08:09+08:00">2019-04-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-28 20:39:09" itemprop="dateModified" datetime="2019-11-28T20:39:09+08:00">2019-11-28</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="小米MIX2安装国际版"><a href="#小米MIX2安装国际版" class="headerlink" title="小米MIX2安装国际版"></a>小米MIX2安装国际版</h1><ol>
+<li>解锁手机<br>先<a href="http://www.miui.com/unlock/index.html" target="_blank" rel="noopener">下载官方解锁工具</a>，按照提示解锁成功后要等待72小时以后才可以刷机。</li>
+<li>下载线刷包<br>在<a href="http://en.miui.com/a-234.html" target="_blank" rel="noopener">这个页面</a>下载对应机型的国际版线刷包，下载后是tgz格式的文件。</li>
+<li>刷机<br><a href="http://zhushou.xiaomi.com/" target="_blank" rel="noopener">下载小米手机助手</a>后打开。关机后一起长按<strong>音量减+电源键</strong>会进入<strong>Fastbook模式</strong>，手机连上电脑，小米助手会自动识别，选择线刷包刷机，等待十几分钟后刷机成功，会自动重启。注意：这一步也可以用小米刷机工具刷机，不过比手机助手要麻烦一点。</li>
+</ol>
+<p>这一步如果用小米刷机工具的话先解压tgz格式，需要解压2次，然后进入fastboot模式，1、点击“加载设备”，2、选择解压后的文件地址，3、选“全部删除并Lock”，4、点击刷机。</p>
+<p><strong>注意</strong>：如果打算刷机后关闭BL锁的话需要先退出小米账号再刷机才行。同样的如果刷机后依然是Unlock想关闭BL锁的话，退出账号重新刷一遍。</p>
+<ol start="4">
+<li>检查更新<br>重启后到<strong>选择地区</strong>这一步切记不要选中国，选香港日本等地区这样以后才可以自由升级。再到<strong>检查更新</strong>这一步长按电源键开启飞行模式才会进入下一步，否则会一直停留在这个页面。</li>
+</ol>
+<h1 id="国际版与国内版对比"><a href="#国际版与国内版对比" class="headerlink" title="国际版与国内版对比"></a>国际版与国内版对比</h1><p>优势：国际版占用内存更少反应更快，玩吃鸡明显更流畅了，有谷歌全家桶，广告干扰较少。</p>
+<p>劣势：国际版没有传送门功能，骚扰拦截只能设置拦截陌生人来电不能设置只拦截骚扰电话，没有小爱同学。</p>
+<p>我用到的功能只有这些区别。</p>
+<p>有问题可以查找官方文档：<a href="https://www.miui.com/shuaji-393.html" target="_blank" rel="noopener">刷机教程</a></p>
+<h1 id="安装谷歌服务框架-google-service"><a href="#安装谷歌服务框架-google-service" class="headerlink" title="安装谷歌服务框架 google service"></a>安装谷歌服务框架 google service</h1><p>下载安装<a href="https://www.coolapk.com/apk/com.goplaycn.googleinstall" target="_blank" rel="noopener">Go谷歌安装器</a>，挂上代理按照提示安装，如果你的机型不支持可以反馈给开发者等待适配。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
