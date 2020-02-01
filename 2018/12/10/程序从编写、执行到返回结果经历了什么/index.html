@@ -58,7 +58,7 @@
 <meta property="og:image" content="http://yoursite.com/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727160539.png">
 <meta property="og:image" content="http://yoursite.com/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727163622.png">
 <meta property="article:published_time" content="2018-12-09T16:04:53.000Z">
-<meta property="article:modified_time" content="2018-12-09T16:11:33.417Z">
+<meta property="article:modified_time" content="2020-02-01T15:03:12.413Z">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727133805.png">
@@ -227,10 +227,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2018-12-10 00:04:53 / 修改时间：00:11:33" itemprop="dateCreated datePublished" datetime="2018-12-10T00:04:53+08:00">2018-12-10</time>
+              <time title="创建时间：2018-12-10 00:04:53" itemprop="dateCreated datePublished" datetime="2018-12-10T00:04:53+08:00">2018-12-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-01 23:03:12" itemprop="dateModified" datetime="2020-02-01T23:03:12+08:00">2020-02-01</time>
+              </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -253,7 +259,7 @@
         <h1 id="解释器"><a href="#解释器" class="headerlink" title="解释器"></a>解释器</h1><p>先在<a href="https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe" target="_blank" rel="noopener">Download Python 3.6.2</a>下载安装 Python，一路回车（不要改安装目录）后就安装好了 Python，然后打开IDLE，界面如图</p>
 <p><img src="/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727133805.png" alt=""></p>
 <p>我们看到的这个界面就是我们和 Python 对话的窗口，我们给它输入命令执行，它处理后告诉我们结果（这个过程叫返回），这个东西叫作 <strong>shel</strong>l，可以在顶部看到“Python 3.6.2rc1 shell”，光标前面的<strong>&gt;&gt;&gt;</strong>符号叫作<strong>shell 提示符。</strong></p>
-<p>我们输入一个命令</p>
+<p>我们输入一个命令<a id="more"></a> </p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"我在学习 Python"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>然后马上可以看到shell返回了一个结果显示在屏幕上</p>
@@ -330,10 +336,10 @@
 <h1 id="变量与赋值"><a href="#变量与赋值" class="headerlink" title="变量与赋值"></a>变量与赋值</h1><p>先看实例</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">"上野树里"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>name</span><br><span class="line"><span class="string">'上野树里'</span></span><br></pre></td></tr></table></figure>
 
-<p>这里<code>=</code>这个符号叫<strong>赋值符号</strong>不是等于号，name 叫变量，可以看到，name 的值变成了字符串’<strong>上野树里</strong>‘。变量的值可以改变，即我们可以重新给它赋值</p>
+<p>这里<code>=</code>这个符号叫<strong>赋值符号</strong>不是等于号，name 叫变量，可以看到，name 的值变成了字符串<strong>上野树里</strong>。变量的值可以改变，即我们可以重新给它赋值</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; name &#x3D; &#39;新垣结衣&#39;</span><br><span class="line">&gt;&gt;&gt; name</span><br><span class="line">&#39;新垣结衣&#39;</span><br></pre></td></tr></table></figure>
 
-<p>给name重新赋值后，name 的值变成了字符串’<strong>新垣结衣</strong>‘。</p>
+<p>给name重新赋值后，name 的值变成了字符串<strong>新垣结衣</strong>。</p>
 <p>前面的举例都是在shell里进行，只能一行一行地执行，没法保存，我们的程序不可能只有一行代码，所以我们在文本编辑器里编写代码，Ctrl+N 新建一个文件就打开了Python自带的文本编辑器，输入下面代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;what&#39;s your name&quot;)</span><br><span class="line">myName &#x3D; input()</span><br><span class="line">print(&quot;My name is &quot; + myName)</span><br></pre></td></tr></table></figure>
 
@@ -343,7 +349,7 @@
 <li>第二行接收键盘的输入，从键盘输入你的名字</li>
 <li>第三行在屏幕显示你的名字</li>
 </ol>
-<p>input()、 print() 是两个最基本的函数（命令）一个从键盘接收命令，一个返回执行的结果。连接字符串的 <code>+</code>** **操作符就是在这样的情况下使用的。</p>
+<p>input()、 print() 是两个最基本的函数（命令）一个从键盘接收命令，一个返回执行的结果。连接字符串的 <code>+</code>操作符就是在这样的情况下使用的。</p>
 <p>Python 自带的编辑器比较简陋，功能少。我们还可以选择其他的编辑器，比如 <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text  编辑器</a> ， 这些编辑器有“自动补全”、语法检查等功能，是编程的好助手。</p>
 <p>试试把上面那三行代码复制到 Sublime Text 编辑器里保存到<strong>C:\Users\Administrator\</strong> 目录下，命名为<strong>test.py</strong> 。选择Python模式，保存时不需要指定后缀名。Python文件的后缀是py 。</p>
 <p><img src="/images/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20170727160241.png" alt=""></p>
