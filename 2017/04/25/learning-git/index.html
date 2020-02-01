@@ -54,7 +54,7 @@
 <meta property="og:description" content="创建版本库版本库（repository）就是你要用 Git 来管理的一个总目录，该目录下所有的目录和文件的任何变化都会被 Git 所记录，哪个文件修改了，哪个文件删除了，都可以通过 Git 来查看。一种简单的应用是只在在本地操作不发布到其他地方，比如你写一本书打算出版，只是在本地修改，不发布。但是大部情况是多人协作，本地需要和一个公共管理平台（比如 Github）对接。 本地创建版本库在任意一个目">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2017-04-25T02:02:25.000Z">
-<meta property="article:modified_time" content="2017-04-25T06:46:38.895Z">
+<meta property="article:modified_time" content="2020-02-01T15:12:17.078Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2017/04/25/learning-git/">
@@ -221,10 +221,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2017-04-25 10:02:25 / 修改时间：14:46:38" itemprop="dateCreated datePublished" datetime="2017-04-25T10:02:25+08:00">2017-04-25</time>
+              <time title="创建时间：2017-04-25 10:02:25" itemprop="dateCreated datePublished" datetime="2017-04-25T10:02:25+08:00">2017-04-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-01 23:12:17" itemprop="dateModified" datetime="2020-02-01T23:12:17+08:00">2020-02-01</time>
+              </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -245,7 +251,7 @@
 
       
         <h1 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h1><p>版本库（repository）就是你要用 Git 来管理的一个总目录，该目录下所有的目录和文件的任何变化都会被 Git 所记录，哪个文件修改了，哪个文件删除了，都可以通过 Git 来查看。一种简单的应用是只在在本地操作不发布到其他地方，比如你写一本书打算出版，只是在本地修改，不发布。但是大部情况是多人协作，本地需要和一个公共管理平台（比如 Github）对接。</p>
-<h2 id="本地创建版本库"><a href="#本地创建版本库" class="headerlink" title="本地创建版本库"></a>本地创建版本库</h2><p>在任意一个目录下用 Git 初始化后就可以用 Git 来管理，比如把 blog 这个目录用 Git 管理</p>
+<h2 id="本地创建版本库"><a href="#本地创建版本库" class="headerlink" title="本地创建版本库"></a>本地创建版本库</h2><p>在任意一个目录下用 Git 初始化后就可以用 Git 来管理，比如把 blog 这个目录用 Git 管理<a id="more"></a> </p>
 <p><code>git init</code></p>
 <p>这样就好了。当前目录下会多了一个.git的目录，这个目录是Git来跟踪管理版本库的，不要手动修改这个目录里面的文件。</p>
 <p>Git 有一个叫暂缓区的东西来和你的目录（工作区）对照，看有什么变化。所以一旦修改需要把<strong>修改</strong>添加到暂缓区让 Git 知道，比如你修改了一个文件，那么</p>
